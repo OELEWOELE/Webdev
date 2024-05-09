@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/bootstrap.min.css">     <!–– Bootstrap framework ––>
+    <link rel="script" href="../Scripts/bootstrap.bundle.min.js">  <!–– Bootstrap framework ––>
+    <link rel="stylesheet" href="../Styles/login.css">
+    <title>Login Form</title>
+</head>
 
+<body>
+<div id="canvas-container">
+    <canvas id="backgroundCanvas"></canvas>
+</div>
+<div class="container">
+    <div class="login-form">
+        <h2 class="text-center mb-4">Login</h2>
+        <form id="loginform">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <div class="text-center mt-3">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+</div>
+<script src="../Scripts/login.js"></script>
+<script src="../Scripts/background-animated.js"></script>
+</body>
+</html>
